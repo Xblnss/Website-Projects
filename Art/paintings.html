@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Tony's closet</title>
+</head>
+<body>
+<style>
+	body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+</style>
+
+<div id="container">
+
+		<header>
+			<h1>TONY'S CLOSET</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="classes.html">Classes</a></li>
+				<!-- <li><a href="classes.html">Classes</a></li> -->
+				<li><a href="paintings.html">Paintings</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+</div>		
+	<main>
+		<div class="titleHead">
+			<h1>Ole!</h1>
+			<figcaption>"Painting by Artist: Antonio Garza"</figcaption>
+		</div>
+		<!-- actual painting stuff -->
+		<div class="Ole">
+			<img src="images/featured.jpg">
+			<p>
+				This is a Baroque style paingting with only a year age and in decent condition
+				The painting does not have any tears and is fully dry. This paingting is based on a 
+				setup froma live picture enviornment.
+
+				"Eso dia Celebramos con fiesta, le fiesta nos estar bien!"
+			</p>
+			<br>
+			<button onclick="window.location.href='index.html'" class="button">Paypal</button>
+		</div>
+
+
+		<div class="titleHead">
+			<h1>Michlangelo approach</h1>
+			<figcaption>"Painting by Artist: Antonio Garza"</figcaption>
+		</div>
+		<div class="AtlasTwo">
+			<img src="images/atlas2.jpg">
+			<p>
+				This is a Baroque style paingting with only a year age and in decent condition
+				The painting does not have any tears and is fully dry. This paingting is based on a 
+				setup froma live picture enviornment.
+
+				"Eso dia Celebramos con fiesta, le fiesta nos estar bien!"
+			</p>
+			<button onclick="window.location.href='index.html'" class="button">Paypal</button>
+		</div>
+
+		<div class="titleHead">
+			<h1>Atlas</h1>
+			<figcaption>"Painting by Artist: Antonio Garza"</figcaption>
+		</div>
+		<div class="Atlas">
+			<img src="images/atlas.jpg">
+			<p>
+				This is a Baroque style paingting with only a year age and in decent condition
+				The painting does not have any tears and is fully dry. This paingting is based on a 
+				setup froma live picture enviornment.
+
+				"Eso dia Celebramos con fiesta, le fiesta nos estar bien!"
+			</p>
+			<button onclick="window.location.href='index.html'" class="button">Paypal</button>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p><a href="mailto:Support@tonysart.net">Support@tonysart.net</a></p>
+	</footer>
+
+
+	<script>
+
+		document.addEventListener("DOMContentLoaded", function() {
+			const elements = document.querySelectorAll(".Ole, .AtlasTwo, .Atlas");
+
+			function handleScroll() {
+				elements.forEach(el => {
+					const rect = el.getBoundingClientRect();
+					if (rect.top < window.innerHeight && rect.bottom >= 0) {
+						el.classList.add("slide-center");
+					} else {
+						el.classList.remove("slide-center"); // Optional: remove to reset when scrolled out
+					}
+				});
+			}
+
+			window.addEventListener("scroll", handleScroll);
+			handleScroll(); // Initial check on load
+		});
+
+	</script>
+
+
+</body>
+</html>

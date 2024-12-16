@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+	<title>Welcome to Smash Dojo</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<style>
+  p {
+    color: white;
+  }
+  body p {
+    text-align: center;
+  }
+  .big-text-box {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	resize: vertical;
+}
+.email-box {
+	padding-left: 5em;
+	padding-top: 15em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#email {
+	width: 20em;
+	height: 1.75em;
+	align-items: left;
+	top: 1em;
+}
+
+#subject {
+	width: 20em;
+	height: 1.75em;
+}
+button {
+	width: 80px;
+}
+
+</style>
+	<body>
+		<main>
+			<div class="email-box">
+				<h1>E-mail us with questions</h1>
+				<form action="/send_email" method="post"></form>
+				<input type="email" id="email" placeholder="E-mail address: " name="email">
+
+				<input type="text" id="subject" placeholder="Subject " name="subject">
+
+
+				<textarea class="big-text-box" placeholder="Message: " name="message"></textarea>
+				<button type="submit" value="Submit">Submit</button>
+			</div>
+					<video autoplay muted loop class="myvideo">
+						<source src="{{ url_for('static', filename='images/fd.mp4') }}">
+						<source src="background.ogg">
+						<p>This is not accesible</p>
+					</video>
+		</main>
+	</body>
+</html>

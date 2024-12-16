@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+	<title>Welcome to Smash Dojo</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+	<body>
+		<h1>Welcome to Super Smash Dojo</h1>
+		<div id="signup">
+			<a href="/signup"><img src="{{ url_for('static', filename='images/signup.png') }}"></a>
+		</div>
+		<div id="signin">
+			<a href="/signin"><img src="{{ url_for('static', filename='images/signin.png') }}"></a>
+		</div>
+		<div id="aboutus">
+			<a href="/aboutus"><img src="{{ url_for('static', filename='images/aboutus.png') }}"></a>
+		</div>
+
+		<video autoplay muted loop class="myvideo">
+			<source src="{{ url_for('static', filename='images/fd.mp4') }}">
+			<source src="background.ogg">
+			This is not accesible
+		</video>
+	</body>
+</html>

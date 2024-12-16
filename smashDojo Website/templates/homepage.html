@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+	<title>Welcome to Smash Dojo</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+	<body>
+		<h1>Choose your character, {{ username }}!</h1>
+	<div id="character">
+		<div class="wrapper">
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Bowser.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Mario.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Doc.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Peach.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Luigi.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/DK.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Samus.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Fox.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Falco.png') }}"></img></a>
+			<br>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Marth.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Falcon.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Pikachu.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Pichu.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/GaW.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Link.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/YoungLink.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Ganon.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Kirby.png') }}"></img></a>
+		</div>
+		<div class="wrapper-after">
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Roy.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Zelda.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Yoshi.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/IceClimbers.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Ness.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/MewTwo.png') }}"></img></a>
+			<a href="/matchmaking"><img src="{{ url_for('static', filename='images/Random.png') }}"></img></a>
+		</div>
+
+		</div>
+		<video autoplay muted loop class="myvideo">
+			<source src="{{ url_for('static', filename='images/fd.mp4') }}">
+			<source src="background.ogg">
+			This is not accesible
+		</video>
+	</div>
+	</body>
+</html>

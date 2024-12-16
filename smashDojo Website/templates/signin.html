@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+	<title>Welcome to Smash Dojo</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<style>
+  p {
+    color: white;
+  }
+  body p {
+    text-align: center;
+  }
+</style>
+
+	<body>
+		<h1>Signup here and climb the ranks.</h1>
+		
+<!-- <form action="includes/signup.inc.php" method="post"> -->
+
+  <form action="/signin" method="POST">
+      <div class="container">
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="uid"><b>username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+  
+  
+        <label for="pwd"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+  
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" name="submit">Sign In</button>
+      </div>
+    </div>
+  </form>
+		<video autoplay muted loop class="myvideo">
+			<source src="{{ url_for('static', filename='images/fd.mp4') }}">
+			<source src="background.ogg">
+			<p>This is not accesible</p>
+		</video>
+
+	</body>
+</html>

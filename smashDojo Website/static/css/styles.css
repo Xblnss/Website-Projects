@@ -1,0 +1,115 @@
+body {
+	background-color: black;
+}
+h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+}
+
+.wrapper-after {
+padding-top: 0.2%;
+padding-left: 6%;
+}
+#character {
+	padding-left: 30%;
+}
+.myvideo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+	.myvideo {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.myvideo {
+		width: auto;
+		height: 100%;
+	}
+}
+#start img{
+	padding-top: 8%;
+	padding-left: 15%;
+}
+#index img{
+	padding-top: 2%;
+	padding-left: 15%;
+}
+#Back img:hover {
+
+}
+
+#signin img {
+	padding-top: 5%;
+	padding-left: 40%;
+}
+#signup img {
+	padding-top: 5%;
+	padding-left: 40%;
+}
+#aboutus img {
+	padding-top: 5%;
+	padding-left: 40%;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}

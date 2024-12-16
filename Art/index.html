@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" size="192x192" href="images/android-chrome-192.png">
+	<title>Tony's closet: Homepage</title>
+</head>
+<body>
+<style>
+
+</style>
+
+<div id="container">
+		<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="classes.html">Classes</a></li>
+				<!-- <li><a href="classes.html">Classes</a></li> -->
+				<li><a href="paintings.html">Paintings</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h1>TONY'S CLOSET</h1>
+		</header>
+	<main>
+		 <!-- Hero Image -->
+		 <div id="hero">
+			<img src= "images/studio.jpg" alt="left arm extended holding a weight">
+<div id="text-color">	
+	<p>Welcome to Tony's Closet a place whjere you can request a painting we also are adding to our artist appeal. We work hard as a online shop to develope our painting with creativity!</p>
+	
+	<p>This business is unique because you can pick the size and subject of your paintings.</p>
+	<p>This Website is Beginner friendly also doing private lessons and working with people with disabilities</p>
+	
+	<p>We provide classes to young art students who want to accell at what they love doing. We offer adult classes (and Young Teens & Adults) and young children classes.
+	<p>If your order is done on sunday or saturday evening you painting will be shipped on Monday after the purchase
+	<span class="action">Signup for art classes today!</span></p>
+	
+		<div class="author">
+			<h1>Artist and Mentor: </h1>
+			<img src="images/tony.jpg">
+			<p>The author of this website has dealt is an artist with ASD, working well as a mentor for students with special needs. Additionally we aim to support special needs artists and make a family friendly art enviornment.</p>
+		</div>
+</div>
+	<div class="mobile">
+		<p>Welcome to Tony's Closet where we even go mobile orders</p>
+		<h3>FREE One-Week Trial Class!</h3>
+		<p>Call us Today to Get Started</p>
+		<p class="tel-link"><a href="tel:2709901294" style="color: white;">(270) 990-1294</a></p>
+		
+		<h4>Art Classes (4kids):</h4>
+		<p>Children below 12 2:00 P.M. (Mondays and Tuesdays)</p>
+		<p>Sunday we're CLOSED (This includes orders)</p>
+	</div>
+		 
+		 </div>
+		 
+		 <div class="grid">
+		 
+		 <figure class="frame">
+			<a href= "classes.html"><img src="images/zoom.jpg" alt="Trial Classes Now Available On Zoom"></a>
+			<figcaption class="pic-text">Signup Today!</figcaption>
+		</figure>
+		 
+		 <figure class="frame">
+			<a href= "paintings.html"><img src="images/featured.jpg" alt="Featured Paintings"></a>
+			<figcaption class="pic-text">Featured Paintings</figcaption>
+		 </figure>
+		 
+		 <figure class="frame">
+			<a href= "buy.html"><img src="images/canvas.jpg" alt="Pick the canvas for your Paintings"></a>
+			<figcaption class="pic-text">Buy a Canvas</figcaption>
+		 </figure>
+		 </div>
+	</main>
+
+	<footer>
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p><a href="mailto:Support@tonysart.net">Support@tonysart.net</a></p>
+	</footer>
+	
+<script>
+
+	document.addEventListener("DOMContentLoaded", function() {
+		const elements = document.querySelectorAll(".tony");
+
+		function handleScroll() {
+			elements.forEach(el => {
+				const rect = el.getBoundingClientRect();
+				if (rect.top < window.innerHeight && rect.bottom >= 0) {
+					el.classList.add("slide-center");
+				} else {
+					el.classList.remove("slide-center"); // Optional: remove to reset when scrolled out
+				}
+			});
+		}
+
+		window.addEventListener("scroll", handleScroll);
+		handleScroll(); // Initial check on load
+	});
+
+</script>
+
+
+</div>
+
+</body>
+</html>
